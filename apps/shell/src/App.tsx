@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Button } from "@federation/ui-kit";
+import { Button, Icon } from "@federation/ui-kit";
 import "@federation/ui-kit/index.css";
 
 const App = () => (
@@ -10,6 +10,7 @@ const App = () => (
     <div>Language: TypeScript</div>
     <div>CSS: Empty CSS</div>
     <Button>example</Button>
+    <Icon.Briefcase />
   </div>
 );
 const rootElement = document.getElementById("app");
