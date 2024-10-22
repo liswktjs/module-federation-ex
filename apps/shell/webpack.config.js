@@ -64,7 +64,9 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "shell",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        posting: "posting@http://localhost:3001/remoteEntry.js",
+      },
       exposes: {},
       shared: {
         ...deps,
@@ -77,6 +79,12 @@ module.exports = (_, argv) => ({
           requiredVersion: deps["react-dom"],
         },
         "@federation/ui-kit": {
+          singleton: true,
+        },
+        "@federation/shell-router": {
+          singleton: true,
+        },
+        "@federation/shared": {
           singleton: true,
         },
       },
