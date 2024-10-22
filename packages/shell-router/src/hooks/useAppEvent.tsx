@@ -20,6 +20,13 @@ const useAppEvent = ({ type }: Props) => {
       navigate(pathname);
     };
     window.addEventListener(`[app-shell] navigated`, shellNavigationHandler);
+
+    return () => {
+      window.removeEventListener(
+        `[app-shell] navigated`,
+        shellNavigationHandler
+      );
+    };
   }, [type, navigate, location]);
 
   useEffect(() => {
