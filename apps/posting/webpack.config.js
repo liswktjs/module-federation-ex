@@ -84,6 +84,9 @@ module.exports = (_, argv) => ({
         "@federation/shell-router": {
           singleton: true,
         },
+        "@federation/shared": {
+          singleton: true,
+        },
       },
     }),
     new HtmlWebPackPlugin({
