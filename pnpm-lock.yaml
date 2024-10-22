@@ -12,8 +12,11 @@ importers:
         specifier: ^2.1.3
         version: 2.1.3
 
-  apps/shell:
+  apps/posting:
     dependencies:
+      '@federation/shell-router':
+        specifier: workspace:*
+        version: link:../../packages/shell-router
       '@federation/ui-kit':
         specifier: workspace:*
         version: link:../../packages/ui-kit
@@ -23,6 +26,9 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
+      react-router-dom:
+        specifier: ^6.27.0
+        version: 6.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.15.8
@@ -81,6 +87,130 @@ importers:
       webpack-dev-server:
         specifier: ^4.3.1
         version: 4.15.2(webpack-cli@4.10.0)(webpack@5.95.0)
+
+  apps/shell:
+    dependencies:
+      '@federation/shell-router':
+        specifier: workspace:*
+        version: link:../../packages/shell-router
+      '@federation/ui-kit':
+        specifier: workspace:*
+        version: link:../../packages/ui-kit
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+      react-router-dom:
+        specifier: ^6.27.0
+        version: 6.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+    devDependencies:
+      '@babel/core':
+        specifier: ^7.15.8
+        version: 7.25.8
+      '@babel/plugin-transform-runtime':
+        specifier: ^7.15.8
+        version: 7.25.7(@babel/core@7.25.8)
+      '@babel/preset-env':
+        specifier: ^7.15.8
+        version: 7.25.8(@babel/core@7.25.8)
+      '@babel/preset-react':
+        specifier: ^7.14.5
+        version: 7.25.7(@babel/core@7.25.8)
+      '@babel/preset-typescript':
+        specifier: ^7.10.4
+        version: 7.25.7(@babel/core@7.25.8)
+      '@types/react':
+        specifier: ^18.2.0
+        version: 18.3.11
+      '@types/react-dom':
+        specifier: ^18.2.0
+        version: 18.3.1
+      autoprefixer:
+        specifier: ^10.1.0
+        version: 10.4.20(postcss@8.4.47)
+      babel-loader:
+        specifier: ^8.2.2
+        version: 8.4.1(@babel/core@7.25.8)(webpack@5.95.0)
+      css-loader:
+        specifier: ^6.3.0
+        version: 6.11.0(webpack@5.95.0)
+      dotenv-webpack:
+        specifier: ^8.0.1
+        version: 8.1.0(webpack@5.95.0)
+      html-webpack-plugin:
+        specifier: ^5.3.2
+        version: 5.6.2(webpack@5.95.0)
+      postcss:
+        specifier: ^8.2.1
+        version: 8.4.47
+      postcss-loader:
+        specifier: ^4.1.0
+        version: 4.3.0(postcss@8.4.47)(webpack@5.95.0)
+      style-loader:
+        specifier: ^3.3.0
+        version: 3.3.4(webpack@5.95.0)
+      typescript:
+        specifier: ^4.5.2
+        version: 4.9.5
+      webpack:
+        specifier: ^5.57.1
+        version: 5.95.0(webpack-cli@4.10.0)
+      webpack-cli:
+        specifier: ^4.10.0
+        version: 4.10.0(webpack-dev-server@4.15.2)(webpack@5.95.0)
+      webpack-dev-server:
+        specifier: ^4.3.1
+        version: 4.15.2(webpack-cli@4.10.0)(webpack@5.95.0)
+
+  packages/shell-router:
+    devDependencies:
+      '@eslint/js':
+        specifier: ^9.11.1
+        version: 9.12.0
+      '@types/react':
+        specifier: ^18.3.10
+        version: 18.3.11
+      '@types/react-dom':
+        specifier: ^18.3.0
+        version: 18.3.1
+      '@vitejs/plugin-react-swc':
+        specifier: ^3.5.0
+        version: 3.7.1(vite@5.4.9(@types/node@22.7.6)(terser@5.36.0))
+      eslint:
+        specifier: ^9.11.1
+        version: 9.12.0
+      eslint-plugin-react-hooks:
+        specifier: ^5.1.0-rc.0
+        version: 5.1.0-rc-fb9a90fa48-20240614(eslint@9.12.0)
+      eslint-plugin-react-refresh:
+        specifier: ^0.4.12
+        version: 0.4.12(eslint@9.12.0)
+      globals:
+        specifier: ^15.9.0
+        version: 15.11.0
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+      react-router-dom:
+        specifier: ^6.27.0
+        version: 6.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      typescript:
+        specifier: ^5.5.3
+        version: 5.6.3
+      typescript-eslint:
+        specifier: ^8.7.0
+        version: 8.10.0(eslint@9.12.0)(typescript@5.6.3)
+      vite:
+        specifier: ^5.4.8
+        version: 5.4.9(@types/node@22.7.6)(terser@5.36.0)
+      vite-plugin-dts:
+        specifier: ^4.2.4
+        version: 4.2.4(@types/node@22.7.6)(rollup@4.24.0)(typescript@5.6.3)(vite@5.4.9(@types/node@22.7.6)(terser@5.36.0))
 
   packages/ui-kit:
     dependencies:
@@ -928,6 +1058,10 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@remix-run/router@1.20.0':
+    resolution: {integrity: sha512-mUnk8rPJBI9loFDZ+YzPGdeniYK+FTmRD1TMCz7ev2SNIozyKKpnGgsxO34u6Z4z/t0ITuu7voi/AshfsGsgFg==}
+    engines: {node: '>=14.0.0'}
 
   '@rollup/pluginutils@5.1.2':
     resolution: {integrity: sha512-/FIdS3PyZ39bjZlwqFnWqCOVnW7o963LtKMwQOD0NhQqw22gSr2YY1afu3FxRip4ZCZNsD5jq6Aaz6QV3D/Njw==}
@@ -2698,6 +2832,19 @@ packages:
     peerDependencies:
       react: '*'
 
+  react-router-dom@6.27.0:
+    resolution: {integrity: sha512-+bvtFWMC0DgAFrfKXKG9Fc+BcXWRUO1aJIihbB79xaeq0v5UzfvnM5houGUm1Y461WVRcgAQ+Clh5rdb1eCx4g==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+
+  react-router@6.27.0:
+    resolution: {integrity: sha512-YA+HGZXz4jaAkVoYBE98VQl+nVzI+cVI2Oj/06F5ZM+0u3TgedN9Y9kmMRo2mnkSK2nCpNQn0DVob4HCsY/WLw==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
@@ -4232,6 +4379,8 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
+
+  '@remix-run/router@1.20.0': {}
 
   '@rollup/pluginutils@5.1.2(rollup@4.24.0)':
     dependencies:
@@ -6043,6 +6192,18 @@ snapshots:
 
   react-icons@5.3.0(react@18.3.1):
     dependencies:
+      react: 18.3.1
+
+  react-router-dom@6.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      '@remix-run/router': 1.20.0
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-router: 6.27.0(react@18.3.1)
+
+  react-router@6.27.0(react@18.3.1):
+    dependencies:
+      '@remix-run/router': 1.20.0
       react: 18.3.1
 
   react@18.3.1:
