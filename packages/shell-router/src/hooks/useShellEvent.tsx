@@ -36,7 +36,7 @@ const useShellEvent = ({ type, basename }: Props) => {
   useEffect(() => {
     if (location.pathname.startsWith(basename)) {
       window.dispatchEvent(
-        new CustomEvent("[app shell] navigated", {
+        new CustomEvent("[app-shell] navigated", {
           detail: location.pathname.replace(basename, ""),
         })
       );
