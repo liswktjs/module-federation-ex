@@ -6,13 +6,18 @@ import {
 } from "react-router-dom";
 import { appPostingBasename } from "./constants/prefix";
 import Layout from "./components/Layout";
+import Auth0ProviderWithNavigator from "./components/Auth0ProviderWithNavigator";
 
 const AppPostingLazy = React.lazy(() => import("./components/AppPosting"));
 
 const browserRouter = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <Auth0ProviderWithNavigator>
+        <Layout />
+      </Auth0ProviderWithNavigator>
+    ),
     children: [
       { index: true, element: <Navigate to={`${appPostingBasename}`} /> },
       {
