@@ -6,9 +6,16 @@ import {
   appNetworkBasename,
   appPostingBasename,
 } from "../constants/prefix";
-import { Icon } from "@federation/ui-kit";
+import { Button, Icon } from "@federation/ui-kit";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Layout = () => {
+  const { isAuthenticated, loginWithRedirect, logout, isLoading } = useAuth0();
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div>
       <header className="global-nav">
@@ -16,6 +23,32 @@ const Layout = () => {
           <Link className="global-nav-logo" to="/">
             <span>Federation</span>
           </Link>
+          {isAuthenticated ? (
+            <div>
+              <Button
+                style={{ marginLeft: 20 }}
+                onClick={() =>
+                  logout({
+                    logoutParams: {
+                      returnTo: window.location.origin,
+                    },
+                  })
+                }
+              >
+                logout
+              </Button>
+            </div>
+          ) : (
+            <div>
+              <Button
+                style={{ marginLeft: 20 }}
+                onClick={() => loginWithRedirect()}
+              >
+                login
+              </Button>
+            </div>
+          )}
+
           <nav className="global-nav-nav">
             <ul className="global-nav-items">
               <li className="global-nav-item">
@@ -52,9 +85,7 @@ const Layout = () => {
           </nav>
         </div>
       </header>
-      <div className="global-container">
-        <Outlet />
-      </div>
+      <div className="global-container">{isAuthenticated && <Outlet />}</div>
     </div>
   );
 };
