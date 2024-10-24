@@ -24,6 +24,7 @@
       "name": "server",
       "path": "server"
     },
+    { "name": "shared", "path": "packages/shared" },
     {
       "name": "monorepo",
       "path": "."
