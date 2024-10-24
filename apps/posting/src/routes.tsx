@@ -1,8 +1,7 @@
 import React from "react";
 import { AppRoutingManager } from "@federation/shell-router";
 import { RouteObject } from "react-router-dom";
-import { POSTING_ELEMENT_ID } from "@federation/shared";
-import Auth0ClientProvider from "./provider/Auth0ClientProvider";
+import { POSTING_ELEMENT_ID, Auth0ClientProvider } from "@federation/shared";
 import Home from "./pages/Home";
 
 export const routes: RouteObject[] = [

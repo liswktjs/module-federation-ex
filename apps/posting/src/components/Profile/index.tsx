@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "./index.scss";
-import useAuth0Client from "../../hooks/useAuth0Client";
+import { useAuth0Client } from "@federation/shared";
 import { UserType } from "../../types";
 import { getUser } from "../../api";
+import "./index.scss";
 
 const Profile = () => {
   const auth0Client = useAuth0Client();

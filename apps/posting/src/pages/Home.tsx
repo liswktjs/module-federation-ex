@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import useAuth0Client from "../hooks/useAuth0Client";
-import "./home.scss";
+import { useAuth0Client } from "@federation/shared";
 import Profile from "../components/Profile";
 import { PostingItemType } from "../types";
 import { createPosting, deletePosting, getPosts } from "../api";
 import Post from "../components/Post";
 import WritePost from "../components/WritePost";
+import "./home.scss";
 
 const Home = () => {
   const auth0Client = useAuth0Client();
