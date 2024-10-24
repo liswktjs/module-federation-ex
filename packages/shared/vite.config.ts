@@ -19,5 +19,14 @@ export default defineConfig({
       name: "@federation/shared",
       fileName: "index",
     },
+    rollupOptions: {
+      external: ["react", "react-dom"],
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+        },
+      },
+    },
   },
 });
