@@ -1,7 +1,9 @@
 import type { PostingItemType, UserType } from "./types";
 
+const HOST_NAME = "http://localhost:4000";
+
 export const getPosts = async (token: string): Promise<PostingItemType[]> => {
-  const res = await fetch("http://localhost:4000/posts?_sort=id&_order=desc", {
+  const res = await fetch(`${HOST_NAME}/posts?_sort=id&_order=desc`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -14,7 +16,8 @@ export const createPosting = async (
   token: string,
   body: { message: string }
 ): Promise<void> => {
-  await fetch("http://localhost:4000/posts", {
+  await fetch(`${HOST_NAME}/posts`, {
+    method: "POST",
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
@@ -27,16 +30,16 @@ export const deletePosting = async (
   token: string,
   id: number
 ): Promise<void> => {
-  await fetch(`http://localhost:4000/posts/${id}`, {
+  await fetch(`${HOST_NAME}/posts/${id}`, {
+    method: "DELETE",
     headers: {
       Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json",
     },
   });
 };
 
 export const getUser = async (token: string): Promise<UserType> => {
-  const res = await fetch("http://localhost:4000/user", {
+  const res = await fetch(`${HOST_NAME}/user`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
