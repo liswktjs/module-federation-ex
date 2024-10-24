@@ -1,106 +1,104 @@
 {
   "posts": [
-    [
-      {
-        "id": 1,
-        "message": "지난 12월 15일, 쿠팡은 연말을 맞아 잠실 오피스에서 쿠팡 및 자회사 임직원을 위한 가족 행사 ‘엄마 아빠 회사는 처음이지?’를 진행하였습니다.",
-        "createdAt": "2023-12-27T15:34:01.085Z",
-        "author": {
-          "email": "2woongjae@gmail.com",
-          "name": "Mark Lee",
-          "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
-        }
-      },
-      {
-        "id": 2,
-        "message": "네이버는 2024년 신입 공채 설명회를 온라인과 오프라인으로 동시에 개최하며, 채용 절차와 직무에 대해 자세한 정보를 제공하는 시간을 가졌습니다.",
-        "createdAt": "2024-01-05T12:20:33.456Z",
-        "author": {
-          "email": "hr@naver.com",
-          "name": "Sarah Kim",
-          "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
-        }
-      },
-      {
-        "id": 3,
-        "message": "카카오는 인턴십 프로그램을 위한 워크숍을 제주 본사에서 개최하며, 지원자들이 실무 경험을 쌓을 수 있도록 다양한 체험 프로그램을 제공했습니다.",
-        "createdAt": "2024-02-14T09:45:22.789Z",
-        "author": {
-          "email": "internships@kakao.com",
-          "name": "Jihun Park",
-          "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
-        }
-      },
-      {
-        "id": 4,
-        "message": "삼성전자는 대학생들을 대상으로 미래 기술 컨퍼런스를 열고, 다양한 R&D 프로젝트에 대해 소개하며 채용과 연계한 멘토링 세션을 진행했습니다.",
-        "createdAt": "2024-03-01T14:11:05.327Z",
-        "author": {
-          "email": "recruit@samsung.com",
-          "name": "Jongho Lee",
-          "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
-        }
-      },
-      {
-        "id": 5,
-        "message": "LG전자는 직무 체험과 직무 인터뷰를 직접 경험할 수 있는 '커리어 데이' 행사를 본사에서 개최해 신입사원 채용을 위한 기회를 제공했습니다.",
-        "createdAt": "2024-04-10T08:30:10.569Z",
-        "author": {
-          "email": "career@lge.com",
-          "name": "Minho Choi",
-          "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
-        }
-      },
-      {
-        "id": 6,
-        "message": "현대차는 대규모 리쿠르팅 행사를 통해 미래 모빌리티 기술과 혁신을 주제로 채용 설명회를 열었으며, 다양한 직무에서의 채용 기회를 제공했습니다.",
-        "createdAt": "2024-05-05T10:15:45.123Z",
-        "author": {
-          "email": "recruit@hyundai.com",
-          "name": "Soojin Kim",
-          "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
-        }
-      },
-      {
-        "id": 7,
-        "message": "SK텔레콤은 데이터 분석 및 AI 분야의 신입 및 경력 사원 모집을 위한 'T-AI 리크루팅 데이'를 진행하여, 기술 전문가들과의 네트워킹 기회를 제공했습니다.",
-        "createdAt": "2024-06-12T11:00:28.567Z",
-        "author": {
-          "email": "hr@sktelecom.com",
-          "name": "Jaehyun Yoo",
-          "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
-        }
-      },
-      {
-        "id": 8,
-        "message": "CJ ENM은 엔터테인먼트 산업에 관심 있는 취업 준비생을 대상으로 '문화산업 채용 페어'를 개최하며, 다양한 직군에 대한 채용 정보를 제공했습니다.",
-        "createdAt": "2024-07-18T16:45:12.954Z",
-        "author": {
-          "email": "recruit@cjenm.com",
-          "name": "Hyejin Lee",
-          "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
-        }
-      },
-      {
-        "id": 9,
-        "message": "한화는 창의적 인재 육성을 목표로 신입 공채 지원자를 대상으로 '한화 인재 개발 프로그램'을 제공하며, 그룹의 비전과 철학을 전달했습니다.",
-        "createdAt": "2024-08-09T09:20:11.385Z",
-        "author": {
-          "email": "recruit@hanwha.com",
-          "name": "Donghyun Oh",
-          "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
-        }
-      },
-      {
-        "id": 10,
-        "message": "LG화학은 이공계 졸업생을 대상으로 기술개발과 환경 보호에 대한 역할을 주제로 한 '채용 오픈데이'를 온라인으로 진행했습니다.",
-        "createdAt": "2024-09-01T13:54:32.678Z",
-        "author": {
-          "email": "recruit@lgchem.com",
-          "name": "Eunji Cho",
-          "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
-        }
+    {
+      "id": 1,
+      "message": "지난 12월 15일, 쿠팡은 연말을 맞아 잠실 오피스에서 쿠팡 및 자회사 임직원을 위한 가족 행사 ‘엄마 아빠 회사는 처음이지?’를 진행하였습니다.",
+      "createdAt": "2023-12-27T15:34:01.085Z",
+      "author": {
+        "email": "2woongjae@gmail.com",
+        "name": "Mark Lee",
+        "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
       }
-    ]
+    },
+    {
+      "id": 2,
+      "message": "네이버는 2024년 신입 공채 설명회를 온라인과 오프라인으로 동시에 개최하며, 채용 절차와 직무에 대해 자세한 정보를 제공하는 시간을 가졌습니다.",
+      "createdAt": "2024-01-05T12:20:33.456Z",
+      "author": {
+        "email": "hr@naver.com",
+        "name": "Sarah Kim",
+        "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
+      }
+    },
+    {
+      "id": 3,
+      "message": "카카오는 인턴십 프로그램을 위한 워크숍을 제주 본사에서 개최하며, 지원자들이 실무 경험을 쌓을 수 있도록 다양한 체험 프로그램을 제공했습니다.",
+      "createdAt": "2024-02-14T09:45:22.789Z",
+      "author": {
+        "email": "internships@kakao.com",
+        "name": "Jihun Park",
+        "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
+      }
+    },
+    {
+      "id": 4,
+      "message": "삼성전자는 대학생들을 대상으로 미래 기술 컨퍼런스를 열고, 다양한 R&D 프로젝트에 대해 소개하며 채용과 연계한 멘토링 세션을 진행했습니다.",
+      "createdAt": "2024-03-01T14:11:05.327Z",
+      "author": {
+        "email": "recruit@samsung.com",
+        "name": "Jongho Lee",
+        "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
+      }
+    },
+    {
+      "id": 5,
+      "message": "LG전자는 직무 체험과 직무 인터뷰를 직접 경험할 수 있는 '커리어 데이' 행사를 본사에서 개최해 신입사원 채용을 위한 기회를 제공했습니다.",
+      "createdAt": "2024-04-10T08:30:10.569Z",
+      "author": {
+        "email": "career@lge.com",
+        "name": "Minho Choi",
+        "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
+      }
+    },
+    {
+      "id": 6,
+      "message": "현대차는 대규모 리쿠르팅 행사를 통해 미래 모빌리티 기술과 혁신을 주제로 채용 설명회를 열었으며, 다양한 직무에서의 채용 기회를 제공했습니다.",
+      "createdAt": "2024-05-05T10:15:45.123Z",
+      "author": {
+        "email": "recruit@hyundai.com",
+        "name": "Soojin Kim",
+        "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
+      }
+    },
+    {
+      "id": 7,
+      "message": "SK텔레콤은 데이터 분석 및 AI 분야의 신입 및 경력 사원 모집을 위한 'T-AI 리크루팅 데이'를 진행하여, 기술 전문가들과의 네트워킹 기회를 제공했습니다.",
+      "createdAt": "2024-06-12T11:00:28.567Z",
+      "author": {
+        "email": "hr@sktelecom.com",
+        "name": "Jaehyun Yoo",
+        "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
+      }
+    },
+    {
+      "id": 8,
+      "message": "CJ ENM은 엔터테인먼트 산업에 관심 있는 취업 준비생을 대상으로 '문화산업 채용 페어'를 개최하며, 다양한 직군에 대한 채용 정보를 제공했습니다.",
+      "createdAt": "2024-07-18T16:45:12.954Z",
+      "author": {
+        "email": "recruit@cjenm.com",
+        "name": "Hyejin Lee",
+        "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
+      }
+    },
+    {
+      "id": 9,
+      "message": "한화는 창의적 인재 육성을 목표로 신입 공채 지원자를 대상으로 '한화 인재 개발 프로그램'을 제공하며, 그룹의 비전과 철학을 전달했습니다.",
+      "createdAt": "2024-08-09T09:20:11.385Z",
+      "author": {
+        "email": "recruit@hanwha.com",
+        "name": "Donghyun Oh",
+        "picture": "https://linefriendssquare.com/cdn/shop/files/line-friends-keyring---40059474739399.jpg?v=1726240085&width=1946"
+      }
+    },
+    {
+      "message": "test",
+      "createdAt": "2024-10-24T05:57:31.510Z",
+      "author": {
+        "name": "un S",
+        "email": "liswktjs@gmail.com",
+        "picture": "https://lh3.googleusercontent.com/a/ACg8ocIyjqbWPkUqDKaz95m1-lAQxVm56g32VQ4Pyo4Yr46zmdGfqA=s96-c"
+      },
+      "id": 10
+    }
   ]
 }
