@@ -23,7 +23,8 @@
     "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
     "paths": {
       "posting/injector": ["../posting/src/injector.tsx"],
-      "edu/injector": ["../edu/src/injector.tsx"]
+      "edu/injector": ["../edu/src/injector.tsx"],
+      "network/injector": ["../network/src/injector.tsx"]
     }
   },
   "include": [

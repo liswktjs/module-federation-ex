@@ -4,12 +4,17 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-import { appEduBasename, appPostingBasename } from "./constants/prefix";
+import {
+  appEduBasename,
+  appNetworkBasename,
+  appPostingBasename,
+} from "./constants/prefix";
 import Layout from "./components/Layout";
 import Auth0ProviderWithNavigator from "./components/Auth0ProviderWithNavigator";
 
 const AppPostingLazy = React.lazy(() => import("./components/AppPosting"));
 const AppEduLazy = React.lazy(() => import("./components/AppEdu"));
+const AppNetworkLazy = React.lazy(() => import("./components/AppNetwork"));
 
 const browserRouter = createBrowserRouter([
   {
@@ -34,6 +39,14 @@ const browserRouter = createBrowserRouter([
         element: (
           <Suspense fallback={<div>Loading edu</div>}>
             <AppEduLazy />
+          </Suspense>
+        ),
+      },
+      {
+        path: `${appNetworkBasename}/*`,
+        element: (
+          <Suspense fallback={<div>Loading network</div>}>
+            <AppNetworkLazy />
           </Suspense>
         ),
       },
