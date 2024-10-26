@@ -1,1 +1,6 @@
-export { ROOT_ELEMENT_ID, POSTING_ELEMENT_ID, EDU_ELEMENT_ID } from "./element";
+export {
+  ROOT_ELEMENT_ID,
+  POSTING_ELEMENT_ID,
+  EDU_ELEMENT_ID,
+  NETWORK_ELEMENT_ID,
+} from "./element";
