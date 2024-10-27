@@ -45,6 +45,16 @@ server.get("/user", (req, res) => {
   });
 });
 
+server.get("/my-network", (req, res) => {
+  res.jsonp({
+    connectionCount: 7,
+    contactCount: 3251,
+    eventCount: 0,
+    pageCount: 0,
+    user: req.user,
+  });
+});
+
 server.use(jsonServer.bodyParser);
 
 server.post("/posts", (req, res, next) => {
