@@ -20,11 +20,12 @@ export default defineConfig({
       fileName: "index",
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "@auth0/auth0-spa-js"],
       output: {
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
+          "@auth0/auth0-spa-js": "Auth0",
         },
       },
     },
