@@ -3,4 +3,5 @@ export {
   POSTING_ELEMENT_ID,
   EDU_ELEMENT_ID,
   NETWORK_ELEMENT_ID,
+  JOB_ELEMENT_ID,
 } from "./element";
