@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import {
   appEduBasename,
+  appJobBasename,
   appNetworkBasename,
   appPostingBasename,
 } from "./constants/prefix";
@@ -15,6 +16,7 @@ import Auth0ProviderWithNavigator from "./components/Auth0ProviderWithNavigator"
 const AppPostingLazy = React.lazy(() => import("./components/AppPosting"));
 const AppEduLazy = React.lazy(() => import("./components/AppEdu"));
 const AppNetworkLazy = React.lazy(() => import("./components/AppNetwork"));
+const AppJobLazy = React.lazy(() => import("./components/AppJob"));
 
 const browserRouter = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ const browserRouter = createBrowserRouter([
         element: (
           <Suspense fallback={<div>Loading network</div>}>
             <AppNetworkLazy />
+          </Suspense>
+        ),
+      },
+      {
+        path: `${appJobBasename}/*`,
+        element: (
+          <Suspense fallback={<div>loading job</div>}>
+            <AppJobLazy />
           </Suspense>
         ),
       },
