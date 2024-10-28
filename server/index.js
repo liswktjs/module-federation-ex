@@ -55,6 +55,14 @@ server.get("/my-network", (req, res) => {
   });
 });
 
+server.get("/apply-status", (req, res) => {
+  res.jsonp({
+    myJobsCount: 15,
+    myOnlineClassesCount: 11,
+    mySavedUpdatesCount: 1,
+  });
+});
+
 server.use(jsonServer.bodyParser);
 
 server.post("/posts", (req, res, next) => {
