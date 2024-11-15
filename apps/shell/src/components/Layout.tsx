@@ -8,8 +8,11 @@ import {
 } from "../constants/prefix";
 import { Button, Icon } from "@federation/ui-kit";
 import { useAuth0 } from "@auth0/auth0-react";
+import { useShellNavigateListener } from "@federation/shell-router";
 
 const Layout = () => {
+  useShellNavigateListener();
+
   const { isAuthenticated, loginWithRedirect, logout, isLoading } = useAuth0();
 
   if (isLoading) {
