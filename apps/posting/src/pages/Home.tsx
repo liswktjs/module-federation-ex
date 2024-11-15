@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { useAuth0Client } from "@federation/shared";
 import Profile from "../components/Profile";
 import { PostingItemType } from "../types";
@@ -6,6 +6,13 @@ import { createPosting, deletePosting, getPosts } from "../api";
 import Post from "../components/Post";
 import WritePost from "../components/WritePost";
 import "./home.scss";
+
+const RecommendConnectionsContainer = React.lazy(
+  () => import("fragment_recommend_connections/container")
+);
+const RecommendJobsContainer = React.lazy(
+  () => import("job/fragment_recommend_jobs")
+);
 
 const Home = () => {
   const auth0Client = useAuth0Client();
@@ -60,7 +67,14 @@ const Home = () => {
             <Post key={item.id} {...item} deletePostById={deletePostById} />
           ))}
       </div>
-      <div className="posting--page-home-right"></div>
+      <div className="posting--page-home-right">
+        <Suspense fallback={<div>loading</div>}>
+          <RecommendConnectionsContainer />
+        </Suspense>
+        <Suspense fallback={<div>loading</div>}>
+          <RecommendJobsContainer />
+        </Suspense>
+      </div>
     </div>
   );
 };
